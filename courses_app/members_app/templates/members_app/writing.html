@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Write here</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="user_writing">
+    <button type="submit">Submit</button>
+</body>
+</html>

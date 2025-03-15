@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All data</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <label for="saved_data">Enter Data to Save: </label>
+    <input type="text" name="saved_data">
+    <button type="submit">Save</button>
+</form>
+
+    {% if saved_data %}
+        <p>Saved Data: {{ saved_data }}</p>
+    {% else %}
+        <p>No data saved yet.</p>
+    {% endif %}
+
+</body>
+</html>
