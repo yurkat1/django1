@@ -6,6 +6,4 @@ def my_page(request):
     else:
         message = "You have no permissions to view this page"
 
-    return render (request, "mycourses/my_page.html", {"message": message,})
-
-
+    return render(request, "mycourses/my_page.html", {"message": message})
