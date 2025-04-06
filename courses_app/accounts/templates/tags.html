@@ -1,0 +1,15 @@
+{% load custom_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Write: {% capitalize_ "hello world!" %}</h1>
+<p>{% cut_text "Harry Potter and the Sorcerer's Stone" 10 %}</p>
+<h2>Signs of the Zodiac</h2>
+{% zodiac_signs %}
+</body>
+</html>
